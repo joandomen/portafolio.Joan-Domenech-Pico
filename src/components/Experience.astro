@@ -1,0 +1,35 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE =[
+{
+    date: "Agosto 2022 - Septiembre 2023",
+    title: "Developer PL/SQL",
+    description:
+      "Desarrollo en la parte de back-end, el software que se utilizo es SQL Developer para general las Query, Inserts, Procedures, Funtions. En el entrono servidor se utilizó servicios  UX. La Herramienta que se utilizó fue OFSSA 'oracle' para su corespondiente función de blaqueo de capitales.",
+    
+  },
+  {
+    date: "........",
+    title: "Analista en BIG DATA",
+    description:
+      "Análisis de datos con la herramienta Power Bi. Transformar y limpiar datos para creación de modelos de datos. Creación de objetos visuales, como gráficos o grafos .Creación de informes con objetos visuales en tiempo real",
+    
+  },
+  {
+    date: "Julio 2018 - Septiembre 2018",
+    title: "Técnico informático “Becario”",
+    description:
+      "Creación de nuevas formas de Marketing en Redes Sociales,Reparación y mantenimiento de telefonía móvil.Programación inicial en frontend.Venta cara al publico, reparación de Hardware y mantenimiento de Software.Comprobación de stock de la tienda física.",
+    
+  },
+]
+---
+<ol class=" mr-auto relative border-s border-gray-200 ml-3">
+    {
+      EXPERIENCIE.map((experiencie) => (
+        <li class="mb-6 ms-4">
+          <ExperienceItem {...experiencie} />
+        </li>
+      ))
+    }
+  </ol>

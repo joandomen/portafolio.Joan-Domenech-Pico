@@ -1,0 +1,38 @@
+---
+import HistorialItem from "./HistorialItem.astro"
+const HISTORIAL =[
+{
+    title: "Ciclo Formativo Grado Superior. Administración de Sistemas Informáticos en Red.",
+    date: "Septiembre 2018 - Junio 2022",
+    description: "",
+
+  },
+  {
+    title: "Ciclo Formativo Grado Medio. Sistemas Microinformáticos y Redes",
+    date: "Septiembre 2016 - Agosto 2018",
+    description: "",
+
+  },
+  {
+    date: "Septiembre 2014 - Mayo 2016",
+    title: "Formación Profesional Básica Informática.",
+    description: "",
+
+  },
+  {
+    date: "Septiembre 2010 - Mayo 2016",
+    title: "Educación Secudaria Obligatoria",
+    description: "",
+
+  },
+]
+---
+<ol class=" mr-auto relative border-s border-gray-200 ml-4">
+    {
+      HISTORIAL.map((historial) => (
+        <li class="mb-9 ms-5">
+          <HistorialItem {...historial} />
+        </li>
+      ))
+    }
+  </ol>
